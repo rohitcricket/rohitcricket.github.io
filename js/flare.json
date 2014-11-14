@@ -1,0 +1,78 @@
+{
+ "name": "flare",
+ "children": [
+  {
+   "name": "ruby on rails",
+   "children": [
+    {
+     "name": "cluster",
+     "children": [
+      {"name": "Ruby on Rails", "size": 3938},
+      {"name": "Javascript", "size": 3812},
+      {"name": "HTML", "size": 6714},
+      {"name": "CSS", "size": 743}
+     ]
+    },
+    {
+     "name": "javascript",
+     "children": [
+      {"name": "Mobile UX/UI", "size": 3534},
+      {"name": "Mobile Usability @Palm", "size": 5731},
+      {"name": "Internet of Things", "size": 7840},
+      {"name": "webOS", "size": 5914},
+      {"name": "iOS", "size": 3416}
+     ]
+    },
+
+  {
+   "name": "data",
+   "children": [
+    {
+     "name": "mobile UX/UI",
+     "children": [
+      {"name": "Android", "size": 721},
+      {"name": "Cloud", "size": 4294},
+      {"name": "Big Data", "size": 9800},
+      {"name": "Stategic Marketing", "size": 1314},
+      {"name": "Analytics", "size": 2220}
+     ]
+    },
+    {"name": "Liquid Cooling", "size": 1759},
+    {"name": "SoC", "size": 2165},
+    {"name": "Digital", "size": 586},
+    {"name": "Analog", "size": 3331},
+    {"name": "ICs", "size": 772},
+    {"name": "Flash Memory", "size": 3322}
+   ]
+  },
+  {
+   "name": "html and css",
+   "children": [
+    {"name": "Project Management", "size": 8833},
+    {"name": "Leadership", "size": 1732},
+    {"name": "Management", "size": 3623},
+    {"name": "Negotiation", "size": 10066}
+   ]
+  },
+
+  {
+   "name": "analytics",
+   "children": [
+    {"name": "Air Cooling", "size": 2105},
+    {"name": "Business Development", "size": 1316},
+    {"name": "Financial Analysis", "size": 3151},
+    {"name": "Alternatives Investing", "size": 3770},
+    {"name": "Mathematica", "size": 2435},
+    {"name": "GraphLab", "size": 4839},
+    {"name": "Python", "size": 1756},
+    {"name": "R", "size": 4268},
+    {"name": "Node.js", "size": 1821},
+    {"name": "D3.js", "size": 5833}
+   ]
+  },
+
+    {"name": "Web Developer", "size": 16540}
+   ]
+  }
+ ]
+}
