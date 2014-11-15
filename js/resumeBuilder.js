@@ -65,12 +65,30 @@ var work = {
 
 		},
 
-				{
+		{
 			"employer": "Credence",
 			"title": "Engineering Manager/Staff Engineer",
 			"location": "Sunnyvale, CA",
 			"dates": "Apr 2005 - Jul 2006",
 			"description": "Architecting Flash Memory Chip Testing Machine."
+
+		},
+
+		{
+			"employer": "Schlumberger",
+			"title": "Group Leader-Systems",
+			"location": "San Jose, CA",
+			"dates": "Aug 2000 - Nov 2004",
+			"description": "Architecting new generation zero-footprint SoC Chip Testing Machine."
+
+		},
+
+		{
+			"employer": "Teradyne",
+			"title": "Design Engineer",
+			"location": "Agoura Hiils, CA",
+			"dates": "Oct 1997 - Mar 2000",
+			"description": "Air and Liquid Cooling of Memory Chip Testing Machine."
 
 		}
 
@@ -93,8 +111,7 @@ var projects = {
 			"dates": "2014",
 			"description": "An ecommerce website powered by Ruby on Rails.",
 			"images": [
-				"http://daedraevans.files.wordpress.com/2012/04/etsy.gif",
-				"http://daedraevans.files.wordpress.com/2012/04/etsy.gif"
+				"http://blogs.walkerart.org/centerpoints/files/2013/09/WAC-Page-Etsy.png"
 			]
 		}
 
@@ -134,18 +151,27 @@ var education = {
 
 	"onlineCourse": [
 		{
-			"title": "JavaScript Syntax",
+			"title": "Front End Web Developer Nanodegree",
 			"school": "Udacity",
-			"dates": 2014,
+			"dates": "2014 - Apr 2015 (expected)",
 			"urls" : "http://wwww.udacity.com"
 	
 		},
+
 
 		{
 			"title": "The Startup's Guide to Web Development with Ruby On Rails",
 			"school": "Udemy",
 			"dates": 2014,
-			"urls" : "http://wwww.udemy.com"
+			"urls" : "https://www.udemy.com/the-startups-guide-to-web-development-with-ruby-on-rails/#/"
+
+		},
+
+		{
+			"title": "Learn Node.js and MongoDB from scratch by examples",
+			"school": "Udemy",
+			"dates": 2014,
+			"urls" : "https://www.udemy.com/nodejs-tutorial-from-scratch-by-examples/#/"
 
 		}
 
@@ -156,6 +182,7 @@ var education = {
 
 
 // The header section.
+
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -195,7 +222,8 @@ if (bio.skills.length > 0) {
 
 
 // Displaying Work Experience
-function displayWork() {
+
+work.display = function() {	
 
 	for (job in work.jobs) {
 
@@ -214,7 +242,8 @@ function displayWork() {
     }
 }
 
-displayWork();
+
+work.display();
 
 // End of Work Experience section
 
@@ -247,6 +276,9 @@ projects.display();
 
 
 // End of Projects section
+
+
+// Education section
 
 function displayEducation () {
   
