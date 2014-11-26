@@ -7,13 +7,16 @@ var bio = {
   "mobile": "408-421-2791",
   "email": "rohit_bmw@yahoo.com",
   "github": "rohitcricket",
+  "githubURL": "https://github.com/rohitcricket?tab=repositories",
   "twitter": "@rohit_bmw",
-  "linkedin": "/in/rohitbmw",
+  "twitterURL": "https://twitter.com/rohit_bmw",
+  "linkedin": "rohitbmw",
+  "linkedinURL": "https://www.linkedin.com/in/rohitbmw",
   "location": "Santa Clara, Calilfornia"
   },
 
- "welcomeMessage": "Hello! My mission is to help build great user experiences. I did that at Palm; I want to do it for you.",
- "skills": ["JavaScript ...",  "HTML/CSS ...", "Ruby on Rails ...", "AngularJS ...", "Usability Analysis ...", "SaaS Marketing/Sales"],
+ "welcomeMessage": "Hello! My mission is to help build great user experiences. <br> I did that at Palm; I want to do it for you.",
+ "skills": ["JavaScript ...",  "HTML/CSS ...", "Ruby on Rails ...", "AngularJS ...", "Usability Analysis ...", "Cloud/Big Data"],
 
  "bioPic": "images/rohit.jpg"
 }
@@ -65,30 +68,12 @@ var work = {
 
 		},
 
-		{
+				{
 			"employer": "Credence",
 			"title": "Engineering Manager/Staff Engineer",
 			"location": "Sunnyvale, CA",
 			"dates": "Apr 2005 - Jul 2006",
 			"description": "Architecting Flash Memory Chip Testing Machine."
-
-		},
-
-		{
-			"employer": "Schlumberger",
-			"title": "Group Leader-Systems",
-			"location": "San Jose, CA",
-			"dates": "Aug 2000 - Nov 2004",
-			"description": "Architecting new generation zero-footprint SoC Chip Testing Machine."
-
-		},
-
-		{
-			"employer": "Teradyne",
-			"title": "Design Engineer",
-			"location": "Agoura Hiils, CA",
-			"dates": "Oct 1997 - Mar 2000",
-			"description": "Air and Liquid Cooling of Memory Chip Testing Machine."
 
 		}
 
@@ -98,7 +83,7 @@ var work = {
 var projects = {
 	"projects": [
 		{
-			"title": "Interative Resume",
+			"title": "Interactive Resume",
 			"dates": "2014",
 			"description": "An online resume that interacts with the user.",
 			"images": [
@@ -151,27 +136,18 @@ var education = {
 
 	"onlineCourse": [
 		{
-			"title": "Front End Web Developer Nanodegree",
+			"title": "JavaScript Syntax",
 			"school": "Udacity",
-			"dates": "2014 - Apr 2015 (expected)",
+			"dates": 2014,
 			"urls" : "http://wwww.udacity.com"
 	
 		},
-
 
 		{
 			"title": "The Startup's Guide to Web Development with Ruby On Rails",
 			"school": "Udemy",
 			"dates": 2014,
-			"urls" : "https://www.udemy.com/the-startups-guide-to-web-development-with-ruby-on-rails/#/"
-
-		},
-
-		{
-			"title": "Learn Node.js and MongoDB from scratch by examples",
-			"school": "Udemy",
-			"dates": 2014,
-			"urls" : "https://www.udemy.com/nodejs-tutorial-from-scratch-by-examples/#/"
+			"urls" : "http://wwww.udemy.com"
 
 		}
 
@@ -191,9 +167,9 @@ var formattedWelcomeMsg = HTMLWelcomeMsg.replace('%data%', bio.welcomeMessage);
 
 var formattedmobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 var formattedemail = HTMLemail.replace("%data%", bio.contacts.email);
-var formattedtwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-var formattedlinkedin = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);
-var formattedgithub = HTMLgithub.replace("%data%", bio.contacts.github);
+var formattedtwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter).replace("#",bio.contacts.twitterURL);
+var formattedlinkedin = HTMLlinkedin.replace("%data%", bio.contacts.linkedin).replace("#",bio.contacts.linkedinURL);
+var formattedgithub = HTMLgithub.replace("%data%", bio.contacts.github).replace("#",bio.contacts.githubURL);
 var formattedlocation = HTMLlocation.replace("%data%", bio.contacts.location);
 
 
@@ -222,8 +198,7 @@ if (bio.skills.length > 0) {
 
 
 // Displaying Work Experience
-
-work.display = function() {	
+function displayWork() {
 
 	for (job in work.jobs) {
 
@@ -242,8 +217,7 @@ work.display = function() {
     }
 }
 
-
-work.display();
+displayWork();
 
 // End of Work Experience section
 
@@ -276,9 +250,6 @@ projects.display();
 
 
 // End of Projects section
-
-
-// Education section
 
 function displayEducation () {
   

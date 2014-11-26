@@ -77,13 +77,20 @@ a {
   text-decoration: none;
   margin-top: 10px;
   display: block;
+  font-size: 16px;
 }
 
 .welcome-message {
-  font-style: italic;
+  /*font-style: italic;
   font-size: 18px;
   color: #F3F3F3;
-  line-height: 28px;
+  line-height: 28px; */
+  font: 36px 'Great Vibes';
+  color: #fff;
+  float: right;
+  margin-left: 150px;
+  margin-top: 20px;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
 }
 
 #skillsH3 {
@@ -108,8 +115,20 @@ a {
   color: #FFFFFF;
 }
 
-.gray {
-  background-color: #F3F3F3;
+.gray1 {
+  background-color: #FAFDFF;
+  margin-top: -50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 10px;
+  clear:both;
+}
+
+.gray2 {
+  background-color: #FAFDFF;
+  margin-top: -15px;
+  margin-left: 100px;
+  margin-right: 100px;
   padding-bottom: 10px;
   clear:both;
 }
@@ -150,6 +169,7 @@ ul {
 
 img {
   padding: 10px;
+  border-radius: 25px;
 }
 
 
@@ -217,3 +237,24 @@ span {
     display: block;
   }
 }
+
+.inline {
+  display: inline !important;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+
+button {
+  height: 25px;
+  width: 110px;
+  border-color: #6495ed;
+  background-color: #94c4fe;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+}
+
+
